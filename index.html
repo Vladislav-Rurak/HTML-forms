@@ -21,13 +21,20 @@
     <title>Document</title>
   </head>
   <body>
-    <span>Radius of ball:</span>
     <input
       type="number"
-      min="0"
-      name="radius"
-      onchange="calculate(this)"
+      id="name"
+      placeholder="Радиус"
     />
-    <p class="volume"></p>
+    <button
+      class="btn btn-default"
+      onclick="volume()"
+    >
+      Отправить
+    </button>
+    <p
+      id="volume"
+      onchange="volume()"
+    ></p>
   </body>
 </html>
